@@ -7,10 +7,11 @@ const resetBtn = document.querySelector('.reset');
 const result = document.querySelector('.result');
 
 increaseBtn.addEventListener('click', function () {
-  counter++;
-  result.innerHTML = counter;
   if (result.innerHTML >= topLimit) {
     alert(`You have reached the limit - ${topLimit}!`);
+  } else {
+    counter++;
+    result.innerHTML = counter;
   }
 });
 
