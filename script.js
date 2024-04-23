@@ -1,4 +1,5 @@
 let counter = 0;
+const topLimit = 5;
 
 const increaseBtn = document.querySelector('.increase');
 const decreaseBtn = document.querySelector('.decrease');
@@ -8,6 +9,9 @@ const result = document.querySelector('.result');
 increaseBtn.addEventListener('click', function () {
   counter++;
   result.innerHTML = counter;
+  if (result.innerHTML >= topLimit) {
+    alert(`You have reached the limit - ${topLimit}!`);
+  }
 });
 
 decreaseBtn.addEventListener('click', function () {
