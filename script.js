@@ -6,12 +6,14 @@ const resetBtn = document.querySelector('.reset');
 const result = document.querySelector('.result');
 
 increaseBtn.addEventListener('click', function () {
-  counter += 1;
+  counter++;
   result.innerHTML = counter;
 });
 
 decreaseBtn.addEventListener('click', function () {
-  counter -= 1;
+  if (result.innerHTML > 0) {
+    counter--;
+  }
   result.innerHTML = counter;
 });
 
