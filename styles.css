@@ -7,6 +7,12 @@
   --color-text-primary: #444;
 }
 
+/* 
+If not for the base css reset I would say, really good job.
+Sometimes you need just enough code to make things work, and here base css reset is not needed. 
+But its a good thing that you know about it! 
+*/
+
 /* Base CSS reset */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -85,6 +91,7 @@ h1 {
   margin-bottom: 1rem;
   font-weight: normal;
 }
+
 
 .counter-section {
   width: 15rem;

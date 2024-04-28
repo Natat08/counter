@@ -1,3 +1,4 @@
+<!-- I really like how you counter looks! great job! It is very pleasant to look at -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +12,14 @@
       <h1>Counter</h1>
       <section class="counter-section">
         <div class="result">0</div>
+        <!-- 
+          all of your view logic for the buttons lies on a width of this element (container).
+          If you were to increase the width here, your buttons would all be on the same row.
+          To prevent this from happening, I would utilize combination of flex rows and flex columns
+          (container is a flex with columns, +/- buttons are grouped in a div with flex rows, reset stays where it is)
+       -->
         <div class="container">
+          <!-- I might switching + and - buttons as my monkey brain expects + to be on the right side.. -->
           <button class="btn increase">+</button>
           <button class="btn decrease">-</button>
           <button class="btn reset">reset</button>
