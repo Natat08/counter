@@ -100,6 +100,12 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  color: var(--color-btn-disabled);
+  cursor: not-allowed;
+}
+
 .increase,
 .decrease {
   width: 3.5rem;
@@ -109,10 +115,4 @@ h1 {
 .reset {
   padding: 0.5rem 1rem;
   width: 9rem;
-}
-
-button:disabled {
-  opacity: 0.5;
-  color: var(--color-btn-disabled);
-  cursor: not-allowed;
 }
