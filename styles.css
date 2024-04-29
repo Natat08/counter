@@ -4,7 +4,9 @@
   --color-primary: #c6d7f9;
   --color-secondary: #fff;
   --color-btn: #6190e8;
+  --color-btn-disabled: #888;
   --color-text-primary: #444;
+  --color-text-alert: #de1818;
 }
 
 /* CSS reset */
@@ -46,8 +48,14 @@ main {
 }
 
 h1 {
-  margin-bottom: 1rem;
   font-weight: normal;
+}
+
+.alert-message {
+  visibility: hidden;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-alert);
+  font-weight: bold;
 }
 
 .counter-section {
@@ -84,9 +92,10 @@ h1 {
   font-size: 1.5rem;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover:enabled {
   background-color: var(--color-btn);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -100,4 +109,10 @@ h1 {
 .reset {
   padding: 0.5rem 1rem;
   width: 9rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  color: var(--color-btn-disabled);
+  cursor: not-allowed;
 }
