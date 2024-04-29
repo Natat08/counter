@@ -44,4 +44,7 @@ decreaseBtn.addEventListener('click', function () {
 resetBtn.addEventListener('click', function () {
   counter = 0;
   result.innerHTML = counter;
+  decreaseBtn.disabled = false;
+  increaseBtn.disabled = false;
+  alertMessageEl.style.visibility = 'hidden';
 });
